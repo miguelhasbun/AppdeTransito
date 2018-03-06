@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.miguelpaz.appdetransito.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50dp"
+        android:background="@color/colorPrimaryDark">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hola, usuario activo"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#fff"
+            android:textSize="35sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="¿Qué desea hacer?"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"/>
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:drawableRight="@drawable/ic_sim_card_alert_black_24dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstylepink"
+            android:text="Denuncias"
+            android:onClick="calldenuncias"
+            android:textColor="#fff"
+
+            />
+
+        <Button
+            android:layout_margin="20dp"
+            android:textColor="#fff"
+            android:background="@drawable/buttonstylepink"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_format_list_bulleted_black_24dp"
+            android:onClick="callleyes"
+            android:text="Leyes"
+            />
+        <Button
+            android:layout_margin="10dp"
+            android:textColor="#fff"
+            android:background="@drawable/buttonstylepink"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_warning_black_24dp"
+            android:onClick="callprincipio"
+            android:text="Salir"
+            />
+
+    </LinearLayout>
+</LinearLayout>
